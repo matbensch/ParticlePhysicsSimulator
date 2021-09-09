@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <form id="newParticleForm">
+            <label> Create Particle </label><br>
+            <label> Radius (m): </label>           <br>
+            <input type="text" id="radius">   <br>
+            <label> Mass (Tg): </label>          <br>
+            <input type="text" id="mass">   <br>
+            <label> Charge (hC): </label>        <br>
+            <input type="text" id="charge">   <br>
+            <label> x: </label>             <br>
+            <input type="text" id="xpos">   <br>
+            <label> y: </label>             <br>
+            <input type="text" id="ypos">  <br>
+            <label> z: </label>             <br>
+            <input type="text" id="zpos">  <br>
+        
+            <input class="button" id="userParticleButton" type="button" value="Submit">        
+
+        </form>
+
+        <form id="forceForm">
+            <input type="checkbox" id="gravityBox">
+            <label for="gravityBox">Gravity</label> <br>
+            <input type="checkbox" id="electricBox">
+            <label for="electricBox">Electric</label> <br>
+            <input type="checkbox" id="magnetBox">
+            <label for="magnetBox">Magnetic</label>
+
+        </form>
+        
+        <meta charset="UTF-8" />
+        <meta name = "viewport" content = "width=device-width, intial-scale = 1.0" />
+        <meta http-equiv = "X-UA-Compatible" content="ie=edge" />
+
+        <title> Particle Simulator </title>
+
+        <style>
+
+            input[type=text]
+            {
+                height: 15px;
+                width: 100px;
+            }
+            #newParticleForm
+            {
+                height: 300px;
+                width: 125px;
+                position: absolute;
+                border: 3px solid #000000;
+            }
+            #forceForm
+            {
+                height: 70px;
+                width: 125px;
+                position: absolute;
+                border:3px solid #000000;
+                top: 303px;
+
+            }
+            body{
+                margin:0;
+            }
+            canvas{
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <script type="module" src = "main.js"></script>
+
+    </body>
+
+</html>
